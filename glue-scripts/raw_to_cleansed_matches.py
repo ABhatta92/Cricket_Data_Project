@@ -1,9 +1,10 @@
 from pyspark.sql import SparkSession
-import pyspark.sql.functions as F
-import pyspark.sql.types as T
+from pyspark.sql.functions import *
+from pyspark.sql.types import *
 
 import os
 import sys
+import boto3
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
 root_dir = os.path.abspath(os.path.join(current_dir, os.pardir))

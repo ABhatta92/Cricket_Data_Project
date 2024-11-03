@@ -12,7 +12,6 @@ s3_client = boto3.client('s3')
 
 # Collecting json data from cricsheet
 url = 'https://cricsheet.org/downloads/t20s_json.zip'
-output_folder = os.path.join(os.getcwd(),'data')
 
 os.makedirs(output_folder, exist_ok=True)
 
