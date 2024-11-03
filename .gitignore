@@ -1,1 +1,3 @@
 env.yaml
+/scripts/__pycache__/*
+/data/*
