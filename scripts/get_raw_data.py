@@ -2,7 +2,6 @@
 import pandas as pd
 import json
 import os
-import sqlite3
 
 
 # Writing all json files into a pandas dataframe
