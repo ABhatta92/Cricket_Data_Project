@@ -30,4 +30,6 @@ jobs:
             --exclude ".git/*" \
             --exclude ".github/*" \
             --exclude "notebook/*" \
-            --exclude "scripts/*"
+            --exclude "scripts/*" \
+            --exclude "README.md" \
+            --exclude ".gitignore"
