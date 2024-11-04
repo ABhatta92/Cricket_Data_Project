@@ -31,6 +31,3 @@ jobs:
             --exclude ".github/*"
             --exclude "notebook/*"
             --exclude "scripts/*"
-            --exclude "notebook/*"
-            --exclude ".gitignore"
-            --exclude "README.md"
