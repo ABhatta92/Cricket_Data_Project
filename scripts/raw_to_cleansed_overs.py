@@ -35,6 +35,15 @@ df_meta = df.select('match_id','innings_id','match_date','event_name','gender','
 
 df_final = df_meta.join(df_overs, how='inner', on='innings_id')
 
+df_final = df_final.withColumn('runs_off_bat', col('runs_off_bat').cast(IntegerType()))\
+.withColumn('runs_extra', col('runs_extra').cast(IntegerType()))\
+.withColumn('total_runs', col('total_runs').cast(IntegerType()))\
+.withColumn('wides', col('wides').cast(IntegerType()))\
+.withColumn('byes', col('byes').cast(IntegerType()))\
+.withColumn('legbyes', col('legbyes').cast(IntegerType()))\
+.withColumn('noballs', col('noballs').cast(IntegerType()))\
+.withColumn('penalty', col('penalty').cast(IntegerType()))
+
 df_final.show()
 
 cleansed_path = os.path.join(folder_path, 't20_overs_cleansed.csv')
