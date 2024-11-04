@@ -29,3 +29,8 @@ jobs:
           aws s3 sync . s3://cricket-project-bucket/glue_scripts/ \
             --exclude ".git/*" \
             --exclude ".github/*"
+            --exclude "notebook/*"
+            --exclude "scripts/*"
+            --exclude "notebook/*"
+            --exclude ".gitignore"
+            --exclude "README.md"
